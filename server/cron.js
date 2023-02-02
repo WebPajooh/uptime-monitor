@@ -4,6 +4,6 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
-cron.schedule('* * * * *', () => {
+cron.schedule(`*/${process.env.FREQUENCY} * * * *`, () => {
   visit(process.env.TARGET)
 })
