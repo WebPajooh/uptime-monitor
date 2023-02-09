@@ -1,0 +1,22 @@
+{
+  "name": "uptime-monitor-client",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "postcss.config.cjs",
+  "dependencies": {
+    "alpinejs": "^3.10.5",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "sass": "^1.57.1",
+    "vite": "^4.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}

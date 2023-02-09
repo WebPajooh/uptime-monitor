@@ -1,0 +1,8 @@
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+    [x-cloak] {
+        display: none;
+    }
+}
