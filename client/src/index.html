@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uptime Monitor</title>
+</head>
+
+<body class="antialiased flex flex-col items-center min-h-screen bg-[#efefef]">
+    <header>
+        <div class="flex justify-center mt-20">
+            <h1 class="text-5xl font-extrabold">Uptime Monitor</h1>
+        </div>
+    </header>
+
+    <main class="container w-1/2 mt-10 flex-grow flex-shrink">
+        <div>
+            <span class="text-[#b3b3b3]">December 2023</span>
+            <div class="flex space-x-1 mt-2 p-1 w-full bg-white rounded shadow-md">
+
+                <div class="relative bg-[#007a53] p-3 rounded-md cursor-pointer" x-data="{isOpen: false}"
+                    @click="isOpen=!isOpen" @click.outside="isOpen=false">
+                    <div id="tooltip1" role="tooltip" :class="{'hidden': !isOpen}"
+                        class="z-20 absolute top-1/2 -left-1/2 -ml-[105px] mt-8 w-64 p-4 shadow-lg bg-white  transition duration-150 ease-in-out rounded-md">
+                        <svg class="absolute left-0 right-0 -mt-3 top-0 w-full rotate-90" width="9px" height="16px"
+                            viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="#FFF">
+                                    <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                        <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                            <polygon id="Triangle"
+                                                transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) "
+                                                points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-center text-sm font-bold text-gray-800 pb-1">...</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#007a53] p-3 rounded-md cursor-pointer" x-data="{isOpen: false}"
+                    @click="isOpen=!isOpen" @click.outside="isOpen=false">
+                    <div id="tooltip1" role="tooltip" :class="{'hidden': !isOpen}"
+                        class="z-20 absolute top-1/2 -left-1/2 -ml-[105px] mt-8 w-64 p-4 shadow-lg bg-white  transition duration-150 ease-in-out rounded-md">
+                        <svg class="absolute left-0 right-0 -mt-3 top-0 w-full rotate-90" width="9px" height="16px"
+                            viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="#FFF">
+                                    <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                        <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                            <polygon id="Triangle"
+                                                transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) "
+                                                points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-center text-sm font-bold text-gray-800 pb-1">...</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#ff6720] p-3 rounded-md cursor-pointer" x-data="{isOpen: false}"
+                    @click="isOpen=!isOpen" @click.outside="isOpen=false">
+                    <div id="tooltip1" role="tooltip" :class="{'hidden': !isOpen}"
+                        class="z-20 absolute top-1/2 -left-1/2 -ml-[105px] mt-8 w-64 p-4 shadow-lg bg-white  transition duration-150 ease-in-out rounded-md">
+                        <svg class="absolute left-0 right-0 -mt-3 top-0 w-full rotate-90" width="9px" height="16px"
+                            viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="#FFF">
+                                    <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                        <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                            <polygon id="Triangle"
+                                                transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) "
+                                                points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-center text-sm font-bold text-gray-800 pb-1">...</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#da291c] p-3 rounded-md cursor-pointer" x-data="{isOpen: false}"
+                    @click="isOpen=!isOpen" @click.outside="isOpen=false">
+                    <div id="tooltip1" role="tooltip" :class="{'hidden': !isOpen}"
+                        class="z-20 absolute top-1/2 -left-1/2 -ml-[105px] mt-8 w-64 p-4 shadow-lg bg-white  transition duration-150 ease-in-out rounded-md">
+                        <svg class="absolute left-0 right-0 -mt-3 top-0 w-full rotate-90" width="9px" height="16px"
+                            viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="#FFF">
+                                    <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                        <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                            <polygon id="Triangle"
+                                                transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) "
+                                                points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-center text-sm font-bold text-gray-800 pb-1">...</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#007a53] p-3 rounded-md cursor-pointer" x-data="{isOpen: false}"
+                    @click="isOpen=!isOpen" @click.outside="isOpen=false">
+                    <div id="tooltip1" role="tooltip" :class="{'hidden': !isOpen}"
+                        class="z-20 absolute top-1/2 -left-1/2 -ml-[105px] mt-8 w-64 p-4 shadow-lg bg-white  transition duration-150 ease-in-out rounded-md">
+                        <svg class="absolute left-0 right-0 -mt-3 top-0 w-full rotate-90" width="9px" height="16px"
+                            viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="#FFF">
+                                    <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                        <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                            <polygon id="Triangle"
+                                                transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) "
+                                                points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-center text-sm font-bold text-gray-800 pb-1">...</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#007a53] p-3 rounded-md cursor-pointer" x-data="{isOpen: false}"
+                    @click="isOpen=!isOpen" @click.outside="isOpen=false">
+                    <div id="tooltip1" role="tooltip" :class="{'hidden': !isOpen}"
+                        class="z-20 absolute top-1/2 -left-1/2 -ml-[105px] mt-8 w-64 p-4 shadow-lg bg-white  transition duration-150 ease-in-out rounded-md">
+                        <svg class="absolute left-0 right-0 -mt-3 top-0 w-full rotate-90" width="9px" height="16px"
+                            viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="#FFF">
+                                    <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                        <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                            <polygon id="Triangle"
+                                                transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) "
+                                                points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-center text-sm font-bold text-gray-800 pb-1">...</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#007a53] p-3 rounded-md cursor-pointer" x-data="{isOpen: false}"
+                    @click="isOpen=!isOpen" @click.outside="isOpen=false">
+                    <div id="tooltip1" role="tooltip" :class="{'hidden': !isOpen}"
+                        class="z-20 absolute top-1/2 -left-1/2 -ml-[105px] mt-8 w-64 p-4 shadow-lg bg-white  transition duration-150 ease-in-out rounded-md">
+                        <svg class="absolute left-0 right-0 -mt-3 top-0 w-full rotate-90" width="9px" height="16px"
+                            viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="#FFF">
+                                    <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                        <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                            <polygon id="Triangle"
+                                                transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) "
+                                                points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-center text-sm font-bold text-gray-800 pb-1">...</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#007a53] p-3 rounded-md cursor-pointer" x-data="{isOpen: false}"
+                    @click="isOpen=!isOpen" @click.outside="isOpen=false">
+                    <div id="tooltip1" role="tooltip" :class="{'hidden': !isOpen}"
+                        class="z-20 absolute top-1/2 -left-1/2 -ml-[105px] mt-8 w-64 p-4 shadow-lg bg-white  transition duration-150 ease-in-out rounded-md">
+                        <svg class="absolute left-0 right-0 -mt-3 top-0 w-full rotate-90" width="9px" height="16px"
+                            viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="#FFF">
+                                    <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                        <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                            <polygon id="Triangle"
+                                                transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) "
+                                                points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-center text-sm font-bold text-gray-800 pb-1">...</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#007a53] p-3 rounded-md cursor-pointer" x-data="{isOpen: false}"
+                    @click="isOpen=!isOpen" @click.outside="isOpen=false">
+                    <div id="tooltip1" role="tooltip" :class="{'hidden': !isOpen}"
+                        class="z-20 absolute top-1/2 -left-1/2 -ml-[105px] mt-8 w-64 p-4 shadow-lg bg-white  transition duration-150 ease-in-out rounded-md">
+                        <svg class="absolute left-0 right-0 -mt-3 top-0 w-full rotate-90" width="9px" height="16px"
+                            viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="#FFF">
+                                    <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                        <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                            <polygon id="Triangle"
+                                                transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) "
+                                                points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-center text-sm font-bold text-gray-800 pb-1">...</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#007a53] p-3 rounded-md cursor-pointer" x-data="{isOpen: false}"
+                    @click="isOpen=!isOpen" @click.outside="isOpen=false">
+                    <div id="tooltip1" role="tooltip" :class="{'hidden': !isOpen}"
+                        class="z-20 absolute top-1/2 -left-1/2 -ml-[105px] mt-8 w-64 p-4 shadow-lg bg-white  transition duration-150 ease-in-out rounded-md">
+                        <svg class="absolute left-0 right-0 -mt-3 top-0 w-full rotate-90" width="9px" height="16px"
+                            viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="#FFF">
+                                    <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                        <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                            <polygon id="Triangle"
+                                                transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) "
+                                                points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-center text-sm font-bold text-gray-800 pb-1">...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
